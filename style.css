@@ -1,0 +1,278 @@
+
+body {
+  background-image: url(https://learn.logikaschool.com/uploads/student/1717525/68188f9db21eb.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #f0f8ff; 
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(50, 45, 75, 0.6); 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 50, 0.4);
+}
+
+.character-box {
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+
+header {
+  background: linear-gradient(45deg, Black, darkblue, yellow); 
+  background-size: 300% 300%;
+  padding: 30px 20px 10px;
+  text-align: center;
+  border-bottom: 2px solid #6a5acd;
+  animation: colorShift 5s linear infinite; 
+}
+
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  color: #ffffff;
+}
+
+header p {
+  margin: 10px 0 20px;
+  color: white;
+  font-style: italic;
+}
+
+
+nav {
+  margin-bottom: 20px;
+  background: #1e1b3a;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background-color: #ffd700;
+  color: #1e1b3a;
+  border: 2px solid #ffffff44;
+  transform: scale(1.05);
+}
+
+
+.container,
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+
+h2 {
+  color: #ffd700;
+  margin-top: 40px;
+  font-size: 1.8em;
+  border-left: 4px solid #ffd700;
+  padding-left: 10px;
+}
+
+
+p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+
+.hero {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid #6a5acd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: transform 0.2s ease, background-color 0.3s;
+  color: white; 
+  text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black; 
+  animation: flickerBlackHero 1.5s infinite alternate; 
+}
+
+@keyframes flickerBlackHero {
+  from {
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+  }
+  to {
+    text-shadow: 0 0 30px black, 0 0 60px black, 0 0 80px black;
+  }
+}
+
+
+.hero:hover {
+  transform: scale(1.02); 
+  background-color: #1e1b3a; 
+  text-shadow: 0 0 20px black, 0 0 40px black, 0 0 50px black; 
+  animation: none; 
+}
+
+
+.hero h3 {
+  margin: 0;
+  font-size: 1.4em;
+  color: #f7d700; 
+  text-shadow: 0 0 10px #f7d700, 0 0 20px #f7d700, 0 0 30px #f7d700; 
+  animation: flickerYellow 1.5s infinite alternate; 
+}
+
+@keyframes flickerYellow {
+  from {
+    text-shadow: 0 0 10px #f7d700, 0 0 20px #f7d700;
+  }
+  to {
+    text-shadow: 0 0 30px #f7d700, 0 0 60px #f7d700, 0 0 80px #f7d700;
+  }
+}
+
+
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+  background: #1e1b3a;
+  border-top: 2px solid #6a5acd;
+}
+
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  .hero h3 {
+    font-size: 1.2em;
+  }
+  .nav li {
+    margin: 5px;
+  }
+  .nav a {
+    padding: 8px 10px;
+    font-size: 0.9em;
+  }
+}
+
+.volume {
+  background-color: rgba(255, 255, 255, 0.1); 
+  border: 2px solid #f7d700; 
+  border-radius: 15px; 
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.volume h3 {
+  font-size: 1.5em; 
+  color: #f7d700; 
+  margin-bottom: 10px;
+}
+
+.volume p {
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 1.6; 
+}
+
+.fantasy-footer {
+  background: linear-gradient(to right, #1b1b2f, #2a2a40);
+  color: #dcdcff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+  border-top: 2px solid #5555aa;
+  box-shadow: 0 -3px 25px rgba(80, 80, 160, 0.4);
+}
+
+.fantasy-footer .footer-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.fantasy-footer h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #f0f0ff;
+  text-shadow: 0 0 8px #6666ff;
+}
+
+.fantasy-footer .quote {
+  font-style: italic;
+  color: #aaaaff;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto 20px;
+  max-width: 700px;
+  color: #ccccff;
+}
+
+.footer-contact a {
+  color: #99ccff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.rights {
+  font-size: 14px;
+  margin-top: 30px;
+  color: #8888aa;
+}
